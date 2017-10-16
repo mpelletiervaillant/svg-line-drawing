@@ -1,10 +1,12 @@
 @keyframes offset {
+
   to {
     stroke-dashoffset: 0;
   }
 }
 
 @keyframes blur {
+
   0% {
     opacity: 0;
     filter: blur(7px);
@@ -18,7 +20,7 @@
 
 h1 {
   color: white;
-  font-family: 'Unica One', sans-serif;
+  font-family: "Unica One", sans-serif;
   position: absolute;
   left: 50px;
   width: 250px;
@@ -61,7 +63,7 @@ image {
   animation: offset 2s linear forwards;
 }
 
-#rainbow-yellow{
+#rainbow-yellow {
   stroke-dasharray: 1918px;
   stroke-dashoffset: 1918px;
   animation: offset 2s linear forwards;
@@ -79,6 +81,7 @@ image {
   animation: offset 2s linear forwards;
 }
 
-#narwhal-eye  {
+#narwhal-eye {
   animation: blur 1s linear forwards;
+  opacity: 100;
 }
