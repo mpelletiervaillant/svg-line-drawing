@@ -4,22 +4,36 @@
   }
 }
 
+@keyframes blur {
+  0% {
+    opacity: 0;
+    filter: blur(7px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
 h1 {
   color: white;
   font-family: 'Unica One', sans-serif;
   position: absolute;
-  bottom: 300px;
+  left: 50px;
+  width: 250px;
+  bottom: 250px;
   z-index: 10000;
+  animation: blur 1s linear forwards;
 }
 
 image {
   position: relative;
-
 }
 
 #narwhal-body {
-  stroke-dasharray: 1980;
-  stroke-dashoffset: 1980;
+  stroke-dasharray: 1980px;
+  stroke-dashoffset: 1980px;
   animation: offset 2s linear forwards;
 }
 
@@ -65,18 +79,6 @@ image {
   animation: offset 2s linear forwards;
 }
 
-#narwhal-eye,  {
+#narwhal-eye  {
   animation: blur 1s linear forwards;
-}
-
-@keyframes blur {
-  0% {
-    opacity: 0;
-    filter: blur(7px);
-  }
-
-  100% {
-    opacity: 1;
-    filter: blur(0);
-  }
 }
